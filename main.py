@@ -57,7 +57,7 @@ async def fetch_med_info(client, message):
     await client.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
     # Use the API to get medical data
-    api_url = f"https://medical.codesearch.workers.dev/?chat={query}"
+    api_key = f""
     try:
         response = requests.get(api_url)
         if response.status_code == 200:
@@ -91,7 +91,7 @@ async def handle_private_query(client, message):
     await client.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
     # Use the API to get medical data
-    api_url = f"https://medical.codesearch.workers.dev/?chat={query}"
+    api_key = f"661048094dmshd422f34bffd5dc0p1d4d56jsn3bbc61e1a120"
     try:
         response = requests.get(api_url)
         if response.status_code == 200:
