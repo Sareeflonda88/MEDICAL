@@ -93,7 +93,7 @@ async def handle_private_query(client, message):
     # Use the API to get medical data
     api_key = f"661048094dmshd422f34bffd5dc0p1d4d56jsn3bbc61e1a120"
     try:
-        response = requests.get(api_url)
+        response = requests.get(api_key)
         if response.status_code == 200:
             data = response.json()
             reply = data.get("data", "Sorry, I couldn't fetch the data.")
